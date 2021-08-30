@@ -1,0 +1,31 @@
+{
+    "services": [
+        {
+            "folder": "SWS", 
+            "name": "AddressLocator_Test",
+            "type": "GeocodeServer"
+        },
+        {
+            "folder": "SWS", 
+            "name": "AddressLocator",
+            "type": "GeocodeServer"
+        }
+    ],
+    "addresses": [
+        {
+            "Street": "600 E 4th St",
+            "City": "Charlotte",
+            "State": "North Carolina"
+        },
+        {
+            "Street": "1245 Allegiance",
+            "City": "Charlotte",
+            "State": "North Carolina"
+        },
+        {
+            "Street": "10803 Maryanna Ct",
+            "City": "Charlotte",
+            "State": "North Carolina"
+        }
+    ]
+}

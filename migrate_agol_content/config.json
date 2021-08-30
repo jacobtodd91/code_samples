@@ -1,0 +1,41 @@
+{
+    "accounts": {
+        "agol": {
+            "orgid": "<organizationId",
+            "url": "https://<organization>.maps.arcgis.com",
+            "username": "<username>",
+            "password": "<password>"
+        }
+    },
+    "dataType": {
+        "SQL": {
+            "database": {
+                "sdw": {
+                    "connectionString": "<connectionString>",
+                    "queries": {
+                        "doesExist":"SELECT UPN FROM <table> WHERE UPN = ?",
+                        "getUsers": "SELECT OBJECTID, Title, UPN, Old_UPN, Domain From <table>",
+                        "updateUsers": "UPDATE <table> SET {} = 1 WHERE = '{}'",
+                        "updateSingleUser": "UPDATE <table> SET {} = 1 WHERE UPN = '{}'",
+                        "notMigrated": "SELECT * From <table> WHERE AGOL_Migrated = 0",
+                        "insertRecords": "INSERT INTO <table> VALUES ({})"
+                    }
+                },
+                "sharedData": {
+                    "connectionString": "<connectionString>",
+                    "queries": {
+                        "getUsers": "SELECT ID, Title, UPN, Old_UPN, Domain From <table>",
+                        "getSingleUser": "SELECT ID, Title, UPN, Old_UPN, Domain From <table> WHERE UPN = {}",
+                        "getAdfsMigratedUsers": "SELECT ID, Title, UPN, Old_UPN, Domain From <table> WHERE UPN_Changed = 'Yes'",
+                        "getReadyToMigrateUsers": "readyToMigrate = SELECT ID, Title, UPN, Old_UPN, Domain From <table> WHERE UPN_Changed = 'Ready To Change'"
+                    }
+                }
+            } 
+        }
+    },
+    "logging": {
+        "backupLocation": "{}\\UserInformation",
+        "emailLists": "MigratedUsers"
+    }
+}
+    

@@ -1,0 +1,15 @@
+{
+    "environments": {
+        "<instance>": {
+            "arcgisServer": {
+                "url": "arcgis",
+                "username": "<username>",
+                "password": "<password>"
+            }
+        }        
+    },
+    "sql": {
+        "connectionString": "<connectionString>",
+        "database": "<databaseName>"
+    }
+}
