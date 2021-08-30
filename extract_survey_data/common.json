@@ -1,12 +1,12 @@
 {
-    "agolUrl": "https://cobra.maps.arcgis.com",
+    "agolUrl": "https://<organization>.maps.arcgis.com",
     "tokenUrl": "https://www.arcgis.com/sharing/rest/oauth2/token",
-    "client_id": "nRxGl4aNUETyJb3r",
-    "client_secret": "d1df58c043d647e78e28dd731d2a8725",
+    "client_id": "<client_id>",
+    "client_secret": "<client_secret>",
     "grant_type": "client_credentials",
-    "services": ["https://services3.arcgis.com/t6ulOHDjzlBrOlof/arcgis/rest/services/service_12d6448eaf4740a7add5680bc50edb72/FeatureServer/0", "https://services3.arcgis.com/t6ulOHDjzlBrOlof/arcgis/rest/services/service_12d6448eaf4740a7add5680bc50edb72/FeatureServer/1" ],
+    "services": ["service1", "service2"],
     "sql": {
-        "connectionString": "DRIVER={ODBC Driver 13 for SQL Server};SERVER=myrs-gdbdev-01;Trusted_Connection=yes;DATABASE=Jacob",
-        "database": "Jacob.dbo"
+        "connectionString": "connectionString",
+        "database": "database"
     }
 }

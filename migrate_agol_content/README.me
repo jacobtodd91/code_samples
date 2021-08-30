@@ -1,0 +1,10 @@
+This script does the following while migrating an ArcGIS Online user from an old account to a new account
+
+- Creates a new ArcGIS Online user
+- Recreates the folder of the old account and creates it in the new account
+- Obtains user entitlements from the old account and sets them in the new account
+- Obtains old account groups information and does the following:
+    - If the user is a member, the new user is added to the group
+    - If the user is the owner, the content is captured then unshared. The content is then transferred to the respected user, then the group ownership is transferred to the new user. The content is then reshared to the newly transferred group.
+- Content is transferred from the old user to the new user
+- As users are migrated, the results are then logged in a database
